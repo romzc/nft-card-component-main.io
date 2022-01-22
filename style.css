@@ -1,5 +1,6 @@
 body {
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
 }
 
 .container {
@@ -11,34 +12,130 @@ body {
     width: 260px;
     margin: 0 auto;
     padding: 1.5rem;
-    margin-top: 60px;
+    margin-top: 5%;
     border-radius: 13px;
+    overflow: hidden;
 }
 
-.image img{
-    width: 260px;
-    height: 260px;
+.card-text {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+
+.card-text .title:hover {
+    color:hsl(178, 100%, 50%);
+}
+
+.image {
+    background: url('./images/image-equilibrium.jpg');
+    position: relative;
     border-radius: 10px;
+    height: 260px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.eye-icon {
+    align-items: center;
+    position: absolute;
+    height: 260px;
+    width: 260px;
+    opacity: 0;
+    border-radius: 10px;
+    background-color: hsl(178, 100%, 50%, 60%);
+}
+
+.eye-icon svg {
+    position: absolute;
+    top: 40%;
+    left: 42%;
+}
+
+.eye-icon:hover {
+    opacity: 1;
 }
 
 .title {
     color: hsl(0, 0%, 100%);
+    font-weight: 600;
 }
 
 .text {
     color: hsl(215, 51%, 70%);
-    font-size: 18px;
-}
-
-.time {
-    color: hsl(215, 51%, 70%);
+    margin-bottom: 0;
+    
 }
 
 .details {
     display: flex;
     justify-content: space-between;
+    vertical-align: middle;
 }
+
+.time {
+    color: hsl(215, 51%, 70%);
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.4rem;
+}
+
 
 .coins {
     color: hsl(178, 100%, 50%);
+    font-weight: 400;
+    display: inline-block;
+    text-shadow: 1px 1px 6px hsl(178, 100%, 50%);
+    vertical-align: middle;
+    margin-left: 0.4rem;
 }
+
+.coins-container svg {
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.clock-container svg {
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.author {
+    color: hsl(0, 0%, 100%);
+}
+
+ .line {
+    border: 1px solid hsl(215, 32%, 27%);
+ }
+
+.author {
+    color: hsl(215, 51%, 70%);
+    margin-left: 1rem;
+    margin-top: 0;
+}
+
+.author-section {
+    display:inline-flex;
+    vertical-align: middle;
+}
+
+.author-section img {
+    width: 24px;
+    height: 24px;
+    border: 1px solid white;
+    border-radius: 50%;
+    top: 50%;
+}
+
+
+.author-section span:hover {
+    color:hsl(178, 100%, 50%);
+}
+
+ .name {
+     color: white;
+ }
+
+
+
